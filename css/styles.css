@@ -1,0 +1,43 @@
+/* 
+1.1 Type selector 
+*/
+em  {
+    background-color: yellow;
+}
+section {
+    border: 2px black solid;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/*
+1.2 Class selector 
+*/
+.highlight {
+    background-color: aquamarine;
+}
+
+/* 
+1.3 ID Selector 
+*/
+#idprop {
+    background-color: red;
+}
+
+/*
+1.4 Attribute Selector 
+1.4.1 Target an element with attribute 
+*/
+em[title] {
+    border: 2px red solid;
+}
+/*
+ 1.4.2 Target an element with attribute exact attribute value 
+*/
+em[title="mytitle-two"] {
+    color: red;
+}
+/** 1.4.3 Target an element with attribute value starting with given text **/
+p[title^="mytitle-two"] {
+    color: red;
+}
