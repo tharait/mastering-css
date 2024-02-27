@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Specifiticy, Inheritance & Cascading</title>
+
+    <style>
+        .parent {
+            color: red;
+            border: 2px blue solid;
+        }
+
+        .in-parent {
+            border: 2px blue solid;
+            padding: 20px;
+        }
+
+        p {
+            color: red;
+        }
+        .para {
+            color: blue;
+        }
+        #para3 {
+            color: black;
+        }
+        .blog p {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>1.Inheritance</h1>
+        <div class="parent">
+            This is the parent
+            <p class="child">This is the child</p>
+        </div>
+
+        <div class="in-parent">
+            <div class="in-child-one"> child one </div>
+            <div class="in-child-two"> child two </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>2.Specificity</h1>
+        <p>This is para one</p>
+        <p class="para">This is para two</p>
+        <p class="para" id="para3">This is para tree</p>
+
+        <div class="blog">
+            <p class="para">This is my blog article</p>
+        </div>
+    </section>
+</body>
+
+</html>

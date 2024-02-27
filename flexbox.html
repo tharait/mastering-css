@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox</title>
+        <style>
+            .flex {
+                border: 1px red dashed;
+                display: flex;
+                flex-direction: column;
+                width: 600px;
+                height: 300px;
+                justify-content:center;
+                align-items: center;
+            }
+            .flex > div{
+             border: 1px solid black;
+             width: 100px;
+            }
+            .flex > div.two {
+                height: 200px;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="flex">
+            <div>one</div>
+            <div class="two">two</div>
+            <div>three</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layouts</title>
+        <style>
+            .overflow {
+                width: 200px;
+                height: 100px;
+                border: 2px black solid;
+                overflow-y: hidden;
+            }
+
+            .overflow-x {
+                width: 200px;
+                height: 100px;
+                border: 2px red solid;
+                overflow: scroll;
+            }
+
+            .inline-parent div{
+                display: inline-block;
+                padding: 10px;
+                border: 1px black solid;
+            }
+            .block-parent span {
+                display: block;
+                padding: 10px;
+                border: 1px black solid;
+            }
+            .hidden {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="overflow">
+            <h1>Overflow</h1>
+            <p>Alex Honnold leads a six-week expedition to eastern Greenland to make a first ascent of one of the highest unclimbed rock faces in the world, but this is much more than a climbing trip. With the help of glaciologist Heidi Sevestre, Alex and the team investigate the impact of climate change on the glaciers, ice caps and fjords in this remote part of the Arctic.</p>
+        </section>
+
+        <section class="overflow-x">
+            <img src="https://placehold.it/400x200" alt="sample image" />
+        </section>
+
+        <section class="display">
+            <h1>Display</h1>
+            <div class="inline-parent">
+                <div>one</div>
+                <div>two</div>
+            </div>
+
+            <div class="block-parent">
+                <span>span one</span>
+                <span>span two</span>
+            </div>
+        </section>
+
+        <section>
+
+        </section>
+    </body>
+</html>

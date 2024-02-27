@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 16px;
+            }
+            :root {
+                --input-height: 2rem;
+                --input-border-color: blue;
+            }
+            .input {
+                height: var(--input-height);
+                padding-left: 0.5re;
+                padding-right: 0.5rem;
+                border: 1px var(--input-border-color) solid;
+                border-radius: 0.25rem;
+            }
+            textarea.input {
+                height: calc(var(--input-height) * 2);
+            }
+            .radio {
+                width: 1.5rem;
+                height: 1.5rem;
+                border: 1px var(--input-border-color) solid;
+            }
+            .checkbox {
+                width: 1.5rem;
+                height: 1.5rem;
+                border: 1px var(--input-border-color) solid;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <input type="text" placeholder="text" class="input" />
+        </div>
+        <div>
+            <textarea placeholder="text" class="input"></textarea>
+        </div>
+        <div>
+            <select placeholder="text" class="input">
+                <option>option 1</option>
+            </select>
+        </div>
+        <div>
+            <input type="radio" id="radioId" class="radio"/>
+            <label for="radio">Radio</label>
+        </div>
+        <div>
+            <input type="checkbox" id="radioId" class="checkbox"/>
+            <label for="radio">Radio</label>
+        </div>
+    </body>
+</html>

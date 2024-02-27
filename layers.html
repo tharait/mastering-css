@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @layer layerone, layerthree, layertwo;
+
+            @layer layerone {
+                .one{
+                    background-color: red;
+                }
+            }
+
+            @layer layertwo {
+                .one {
+                    background-color: blue;
+                }
+            }
+
+            @layer layerthree {
+                .one {
+                    background-color: blueviolet;
+                }
+            }
+
+            .one {
+                background-color: black;
+                color: white;
+            } 
+        </style>
+    </head>
+    <body>
+
+        <div class="one"> This is class one </div>
+    </body>
+</html>
